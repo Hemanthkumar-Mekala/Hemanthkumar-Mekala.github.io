@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hemanth Kumar Mekala — Data Analyst Portfolio</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif}
+    body{margin:0;background:linear-gradient(180deg,#071028 0%, #0b1626 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:980px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;gap:18px}
+    .avatar{width:88px;height:88px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:#042027}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 18px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .project{margin-bottom:14px;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
+    .project h3{margin:0 0 6px;font-size:16px}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#002226;font-weight:600}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+    a.link{color:var(--accent);text-decoration:none}
+    pre.code{background:#021124;padding:10px;border-radius:8px;color:#9fe3ea;overflow:auto}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}header{flex-direction:row;gap:12px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">HK</div>
+      <div>
+        <h1>Hemanth Kumar Mekala</h1>
+        <p class="lead">I’m a Data Analyst fresher passionate about using data to uncover insights. With a background in mechanical engineering, I combine analytical thinking with practical problem solving to deliver clear, actionable results. Skilled in Python, SQL, Power BI, and Excel — I build analyses and dashboards that help teams make better decisions.</p>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="link" href="mailto:mailmhemanth@gmail.com">mailmhemanth@gmail.com</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid" style="margin-top:22px">
+      <section>
+        <div class="card">
+          <h2 style="margin-top:0">Selected Projects</h2>
+
+          <div id="projects" class="project">
+            <h3>Customer Behavior Analysis</h3>
+            <div class="meta">Tools: Python (pandas, matplotlib), SQL, Excel — Type: EDA & segmentation</div>
+            <p style="margin:0 0 8px">Objective: Understand purchasing patterns and identify high-value customer segments to inform targeted marketing.</p>
+            <ul style="margin:6px 0 8px;color:var(--muted)">
+              <li>Cleaned and merged multi-source transaction and customer datasets using Python and SQL.</li>
+              <li>Performed RFM segmentation and visualized cohort behaviour to identify retention opportunities.</li>
+              <li>Key outcome: Identified the top customer segment with highest repeat purchase tendencies and recommended targeted retention campaigns.</li>
+            </ul>
+            <div style="display:flex;gap:8px"><a class="btn" href="https://github.com/Hemanthkumar-Mekala" target="_blank">View GitHub</a><a class="link" href="#">View Notebook</a></div>
+          </div>
+
+          <div class="project">
+            <h3>Vendor Performance Analysis</h3>
+            <div class="meta">Tools: Power BI, SQL, Excel — Type: Dashboard & KPI reporting</div>
+            <p style="margin:0 0 8px">Objective: Build an interactive dashboard to monitor vendor delivery, quality and cost KPIs for procurement teams.</p>
+            <ul style="margin:6px 0 8px;color:var(--muted)">
+              <li>Wrote SQL queries to calculate on-time delivery rates, defect rates and cost variance by vendor.</li>
+              <li>Created Power BI dashboard with filters, trend charts and a vendor comparison matrix for quick decision-making.</li>
+              <li>Impact: Dashboard enabled procurement to quickly identify underperforming vendors and prioritize audits.</li>
+            </ul>
+            <div style="display:flex;gap:8px"><a class="btn" href="#" target="_blank">Open Dashboard</a><a class="link" href="#">Download Summary</a></div>
+          </div>
+
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2 style="margin-top:0">About this portfolio</h2>
+          <p style="color:var(--muted)">This single-page portfolio is designed for quick recruiter review — clear headings, short project summaries and direct links to code and dashboards. Replace placeholder links with your real GitHub and Power BI URLs.</p>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <h2 style="margin-top:0">Skills</h2>
+          <div class="skills" style="margin-top:10px">
+            <div class="chip">Python (pandas, numpy)</div>
+            <div class="chip">SQL</div>
+            <div class="chip">Power BI</div>
+            <div class="chip">Excel</div>
+            <div class="chip">Data Cleaning</div>
+            <div class="chip">Data Visualization</div>
+            <div class="chip">EDA</div>
+            <div class="chip">Statistical Analysis</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2 style="margin-top:0">Resume & Links</h2>
+          <p class="meta">Download resume / Online profiles</p>
+          <p style="margin:8px 0"><a class="link" href="https://github.com/Hemanthkumar-Mekala" target="_blank">GitHub: github.com/Hemanthkumar-Mekala</a></p>
+          <p style="margin:8px 0"><a class="link" href="https://www.linkedin.com/in/hemanth-mekala-393837380/" target="_blank">LinkedIn</a></p>
+          <p style="margin:8px 0"><a class="link" href="#">Download Resume (PDF)</a></p>
+        </div>
+
+        <div class="card" style="margin-top:16px;text-align:center">
+          <h3 style="margin:6px 0">Contact</h3>
+          <p class="meta">I'm open to internship and entry-level roles.</p>
+          <p style="margin:8px 0"><a class="link" href="mailto:mailmhemanth@gmail.com">mailmhemanth@gmail.com</a></p>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      Built by Hemanth Kumar Mekala • Created for recruiter-friendly review • Customize links and content as needed.
+    </footer>
+  </div>
+</body>
+</html>
